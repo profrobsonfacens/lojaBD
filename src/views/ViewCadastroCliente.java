@@ -76,7 +76,7 @@ public class ViewCadastroCliente extends javax.swing.JFrame {
                      + " cpf = '" + consultaCpf + "'"
                 + ";"
             );
-            
+            novoCliente.limpaCliente();
             while(this.conectar.getResultSet().next()){
                 novoCliente.setNome(this.conectar.getResultSet().getString(1));
                 novoCliente.setSexo(this.conectar.getResultSet().getString(2));
